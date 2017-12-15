@@ -60,6 +60,7 @@ int main(void) {
 		adcResult = adc_read(ADC0);
 		ignition = (adcResult > 110)? 1 : 0;
 		
+		
 		// Reenviar código ibutton
 		 if (timerOverflowCount>=470)
 		 {
