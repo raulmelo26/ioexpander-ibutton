@@ -20,10 +20,10 @@
 #define timer0_setCounter(value)		{TCNT0 = value;}
 #define timer0_enableOverFlowInt()		{TIMSK |= (1<<TOIE0);}
 #define timer0_stop()					{TCCR0B |= (0<<CS02)|(0<<CS01)|(0<<CS00);}
-
-uint16_t timerOverflowCount;		
+		
 uint8_t timeoutLoginEnable;
-uint16_t timeoutLogin;	
+uint16_t timeoutLogin;
+uint16_t timerOverflowCount;	
 
 uint8_t timeoutLogoutEnable;
 uint16_t timeoutLogout;
